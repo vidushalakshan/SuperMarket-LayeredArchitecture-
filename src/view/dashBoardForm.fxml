@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="817.0" prefWidth="1305.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.dashBoardFormController">
+   <children>
+      <Pane prefHeight="817.0" prefWidth="369.0" style="-fx-background-color: #4bcffa;">
+         <children>
+            <Circle fill="DODGERBLUE" layoutX="181.0" layoutY="139.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+            <ImageView fitHeight="150.0" fitWidth="153.0" layoutX="104.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/avatar-3637425_960_720.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="73.0" layoutY="263.0" prefHeight="32.0" prefWidth="240.0" text="Vidusha Lakshan" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="106.0" layoutY="373.0" onMouseClicked="#AdddCustomerOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icon-256x256.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="166.0" fitWidth="150.0" layoutX="106.0" layoutY="595.0" onMouseClicked="#ManageCustomerOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/download%20(1).png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="122.0" layoutY="477.0" prefHeight="32.0" prefWidth="125.0" text="+Add Customer">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="111.0" layoutY="720.0" prefHeight="20.0" prefWidth="140.0" text="Manage Customer">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Pane layoutX="214.0" layoutY="739.0" prefHeight="4.0" prefWidth="41.0" style="-fx-background-color: White;" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="191.0" fitWidth="200.0" layoutX="1098.0" onMouseClicked="#AdminOnMouseClicked" pickOnBounds="true">
+         <image>
+            <Image url="@../image/4__2850_29.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="lblTime" layoutX="571.0" layoutY="24.0" prefHeight="85.0" prefWidth="369.0" textFill="#8d1f1f">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="394.0" fitWidth="909.0" layoutX="383.0" layoutY="269.0" onMouseClicked="#AdddCustomerOnMouseClicked" pickOnBounds="true">
+         <image>
+            <Image url="@../image/tesco-financials.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="85.0" fitWidth="82.0" layoutX="560.0" layoutY="722.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/WhatsApp.svg.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="88.0" layoutX="712.0" layoutY="729.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/twitter.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="1157.0" layoutY="160.0" prefHeight="32.0" prefWidth="82.0" text="+Admin">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Pane layoutX="737.0" layoutY="253.0" prefHeight="32.0" prefWidth="230.0" style="-fx-background-color: White;" />
+      <Label fx:id="lblDate" layoutX="571.0" layoutY="126.0" prefHeight="85.0" prefWidth="369.0" textFill="#8d1f1f">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="387.0" layoutY="43.0" prefHeight="45.0" prefWidth="140.0" text="Time :" textFill="#9e6d6d">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="387.0" layoutY="144.0" prefHeight="45.0" prefWidth="140.0" text="Date :" textFill="#9e6d6d">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="68.0" fitWidth="69.0" layoutX="413.0" layoutY="729.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/fb_icon_325x325.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="103.0" fitWidth="104.0" layoutX="1198.0" layoutY="711.0" onMouseClicked="#logOutOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/depositphotos_66251761-stock-photo-logout-circular-icon-on-white.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

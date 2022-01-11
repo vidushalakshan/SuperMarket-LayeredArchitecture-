@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="817.0" prefWidth="1305.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.itemAddFormController">
+   <children>
+      <Pane layoutX="33.0" layoutY="89.0" prefHeight="293.0" prefWidth="555.0" style="-fx-background-color: #D980FA;" />
+      <Label layoutX="39.0" layoutY="92.0" prefHeight="39.0" prefWidth="191.0" text=" Register New Item" textFill="#6b1111">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtItemCode" labelFloat="true" layoutX="39.0" layoutY="166.0" prefHeight="31.0" prefWidth="222.0" promptText="Item Code" />
+      <JFXTextField fx:id="txtDescription" labelFloat="true" layoutX="336.0" layoutY="166.0" prefHeight="31.0" prefWidth="222.0" promptText="Description" />
+      <JFXTextField fx:id="txtPackSize" labelFloat="true" layoutX="39.0" layoutY="241.0" prefHeight="31.0" prefWidth="222.0" promptText="Pack Size" />
+      <JFXTextField fx:id="txtUnitePrice" labelFloat="true" layoutX="336.0" layoutY="241.0" prefHeight="31.0" prefWidth="222.0" promptText="Unite Price" />
+      <JFXTextField fx:id="txtQTYOnHand" labelFloat="true" layoutX="174.0" layoutY="327.0" prefHeight="31.0" prefWidth="222.0" promptText="QTY On Hand" />
+      <JFXButton buttonType="RAISED" layoutX="964.0" layoutY="247.0" onAction="#btnModifyItemDetailsOnAction" prefHeight="51.0" prefWidth="251.0" style="-fx-background-color: #2980b9;" text="Search Item" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="964.0" layoutY="131.0" onAction="#btnRemoveItems" prefHeight="51.0" prefWidth="251.0" style="-fx-background-color: #2980b9;" text="Remove Items" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView fx:id="tblItemDetails" layoutX="30.0" layoutY="425.0" prefHeight="366.0" prefWidth="1243.0">
+        <columns>
+          <TableColumn fx:id="colItemCode" prefWidth="235.00003051757812" text="Item Code" />
+          <TableColumn fx:id="colDescription" prefWidth="294.0" text="Description" />
+            <TableColumn fx:id="colPackSize" prefWidth="249.0" text="Pack Size" />
+            <TableColumn fx:id="colUnitePrice" prefWidth="226.0" text="Unite Price" />
+            <TableColumn fx:id="colQTYOnHand" prefWidth="238.0" text="QTY  On Hand" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="964.0" layoutY="358.0" onAction="#btnAddItem" prefHeight="51.0" prefWidth="251.0" style="-fx-background-color: #2980b9;" text="+Add Item" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="39.0" layoutY="14.0" onAction="#btnHome" prefHeight="51.0" prefWidth="191.0" style="-fx-background-color: #5758BB;" text="Home" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

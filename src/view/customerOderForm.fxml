@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="817.0" prefWidth="1305.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.customerOderFormController">
+   <children>
+      <Pane layoutX="18.0" layoutY="86.0" prefHeight="307.0" prefWidth="916.0" style="-fx-background-color: #34e7e4;" />
+      <Label layoutX="29.0" layoutY="94.0" prefHeight="39.0" prefWidth="191.0" text="Add New Customer " textFill="#6b1111">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCusId" labelFloat="true" layoutX="29.0" layoutY="151.0" prefHeight="31.0" prefWidth="218.0" promptText="Customer ID" />
+      <JFXTextField fx:id="txtCusTitle" labelFloat="true" layoutX="355.0" layoutY="151.0" prefHeight="31.0" prefWidth="218.0" promptText="Customer Title" />
+      <JFXTextField fx:id="txtCusName" labelFloat="true" layoutX="689.0" layoutY="151.0" prefHeight="31.0" prefWidth="218.0" promptText="Customer Name" />
+      <JFXTextField fx:id="txtCusAddress" labelFloat="true" layoutX="29.0" layoutY="241.0" prefHeight="31.0" prefWidth="218.0" promptText="Customer Address" />
+      <JFXTextField fx:id="txtCusCity" labelFloat="true" layoutX="355.0" layoutY="241.0" prefHeight="31.0" prefWidth="218.0" promptText="Customer City" />
+      <JFXTextField fx:id="txtCusProvince" labelFloat="true" layoutX="689.0" layoutY="241.0" prefHeight="31.0" prefWidth="218.0" promptText="Customer Province" />
+      <JFXTextField fx:id="txtCusPostalCode" labelFloat="true" layoutX="355.0" layoutY="336.0" prefHeight="31.0" prefWidth="218.0" promptText="Customer PostalCode" />
+      <JFXButton buttonType="RAISED" layoutX="1059.0" layoutY="326.0" onAction="#AddCustomerOnAction" prefHeight="51.0" prefWidth="169.0" style="-fx-background-color: #2980b9;" text="+Add Customer" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView fx:id="tblCustomerDetails" layoutX="25.0" layoutY="417.0" prefHeight="371.0" prefWidth="1266.0">
+        <columns>
+          <TableColumn fx:id="colCustomerID" prefWidth="157.00003051757812" text="Customer ID" />
+          <TableColumn fx:id="colCustomerTitle" prefWidth="139.0" text="Customer Title" />
+            <TableColumn fx:id="colCustomerName" prefWidth="161.0" text="Customer Name" />
+            <TableColumn fx:id="colCustomerAddress" prefWidth="191.0" text="Customer Address" />
+            <TableColumn fx:id="colCustomerCity" prefWidth="151.0" text="Customer City" />
+            <TableColumn fx:id="colCustomerProvince" prefWidth="205.0" text="Customer Province" />
+            <TableColumn fx:id="colCustomerPostalCode" prefWidth="261.0" text="Customer PostalCode" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="1059.0" layoutY="231.0" onAction="#DeleteOnAction" prefHeight="51.0" prefWidth="169.0" style="-fx-background-color: #2980b9;" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1059.0" layoutY="60.0" onAction="#UpdateOnAction" prefHeight="51.0" prefWidth="169.0" style="-fx-background-color: #2980b9;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="25.0" layoutY="14.0" onAction="#btnBackOnAction" prefHeight="51.0" prefWidth="169.0" style="-fx-background-color: #2980b9;" text="&lt;Back" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1059.0" layoutY="141.0" onAction="#btnSearchOnAction" prefHeight="51.0" prefWidth="169.0" style="-fx-background-color: #2980b9;" text="Search" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

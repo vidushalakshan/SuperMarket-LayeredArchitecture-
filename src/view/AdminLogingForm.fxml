@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="root" prefHeight="643.0" prefWidth="795.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminLoginFormController">
+   <children>
+      <ImageView disable="true" fitHeight="643.0" fitWidth="392.0" focusTraversable="true" pickOnBounds="true">
+         <image>
+            <Image url="@../image/supermarket-app-product-scanner-Droits-d-auteur-DragonImages.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtUserName" focusColor="BLACK" labelFloat="true" layoutX="466.0" layoutY="257.0" prefHeight="38.0" prefWidth="300.0" promptText="User Name">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPassWord" focusColor="#04123c" labelFloat="true" layoutX="466.0" layoutY="345.0" prefHeight="38.0" prefWidth="300.0" promptText="Password">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton buttonType="RAISED" layoutX="504.0" layoutY="427.0" onAction="#btnSignInOnAction" prefHeight="64.0" prefWidth="207.0" style="-fx-background-color: #2980b9;" text="Sign In" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="29.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="463.0" layoutY="173.0" prefHeight="45.0" prefWidth="141.0" text="Sign In">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="435.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Blue_Ocean_Hotel/src/image/220px-User_icon_2.svg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="25.0" layoutX="438.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Blue_Ocean_Hotel/src/image/232962.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="59.0" layoutX="472.0" layoutY="579.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/fb_icon_325x325.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="59.0" layoutX="592.0" layoutY="579.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/instagram.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="58.0" layoutX="703.0" layoutY="576.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/WhatsApp.svg.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

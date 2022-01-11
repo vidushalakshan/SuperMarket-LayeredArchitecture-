@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="872.0" prefWidth="1305.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderManageFormController">
+   <children>
+      <TableView fx:id="tblOrderManage" layoutX="47.0" layoutY="105.0" prefHeight="534.0" prefWidth="1211.0">
+        <columns>
+          <TableColumn fx:id="colOrderID" prefWidth="251.0" text="OrderID" />
+          <TableColumn fx:id="colCustomerID" prefWidth="301.0" text="CustomerID" />
+            <TableColumn fx:id="colOrderDate" prefWidth="302.0" text="OrderDate" />
+            <TableColumn fx:id="colCost" prefWidth="355.0" text="Cost" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="1009.0" layoutY="717.0" onAction="#btnDelete" prefHeight="67.0" prefWidth="237.0" style="-fx-background-color: #2980b9;" text="Delete" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="47.0" layoutY="14.0" onAction="#btnBack" prefHeight="67.0" prefWidth="237.0" style="-fx-background-color: #2980b9;" text="&lt;Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
